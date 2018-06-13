@@ -1,0 +1,13 @@
+.greeting {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  &__thumbsup {
+    font-size: 2em;
+    margin: 0;
+  }
+}
