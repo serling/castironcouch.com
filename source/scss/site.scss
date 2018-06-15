@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  font-size: 16px;
+  margin: 0;
+  font-family: Tahoma, Verdana, sans-serif;
+
+  > div {
+    height: 100%;
+  }
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+.mouse-user * {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
