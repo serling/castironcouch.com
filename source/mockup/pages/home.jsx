@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Greeting from '../components/greeting';
+import Greeting from '../../components/greeting';
 
 const Home = () => <Greeting />;
 

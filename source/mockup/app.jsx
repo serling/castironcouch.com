@@ -1,17 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// This file renders the basic html pages when running the mockup
 const App = ({ children, css, js }) => (
   <html>
     <head>
+      {css.map((file, index) => (
+        <link key={index} rel="stylesheet" href={`/${file}`} />
+      ))}
       <meta charSet="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>castirconcouch.com</title>
-      {css.map(file => <link key={file} rel="stylesheet" href={`/${file}`} />)}
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+      <script src="/webpack-dev-server.js" />
+      <title>Castironcouch</title>
     </head>
     <body>
       <div id="mount-point">{children}</div>
-      {js.map(file => <script key={file} src={`/${file}`} />)}
+      {js.map((file, index) => <script key={index} src={`/${file}`} />)}
     </body>
   </html>
 );
